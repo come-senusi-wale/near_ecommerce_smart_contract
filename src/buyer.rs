@@ -410,7 +410,7 @@ impl BuyerCore for Contract {
        let seller_id = self.seller_id();
 
        //pay the seller for selling goods
-       Promise::new(seller_id).transfer(total_cost);
+       Promise::new(seller_id).transfer(deposite);
 
 
         //get the set of products a buyer add to cart
